@@ -7,11 +7,14 @@ $(document).ready(function(){
 	$w.scroll(function(){
 		var scrollPosition = $w.scrollTop();
 		if (scrollPosition > navPosYTop){
-			if($('nav').hasClass('fixedNav') == false)
+			if($('nav').hasClass('fixedNav') == false){
 				$('nav').addClass('fixedNav');
+				$('.contents').css("margin-top",$('nav').height()+"px");
+			}
 		}
 		if(scrollPosition<=navPosYTop && $('nav').hasClass('fixedNav')==true){
 			$('nav').removeClass('fixedNav');
+			$('.contents').css("margin-top","0px");
 		}
 	});
 });

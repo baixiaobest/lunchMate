@@ -1,6 +1,6 @@
 html, body{
 	margin: 0;
-	height: 100%;
+	min-height: 100%;
 	font-family: sans-serif;
 }
 
@@ -8,6 +8,12 @@ a, a:link, a:visited, a:hover, a:active{
 	text-decoration: none;
 	color: white;
 }
+
+h1, h2{
+	color: white;
+}
+
+/***********************************NAVIGATION*******************************************/
 
 nav{
 	height: 50px;
@@ -57,7 +63,7 @@ nav{
 	width: 210px;
 	margin-left: auto;
 	margin-right: auto;
-	top: 100px;
+	top: 120px;
 	font-size: 20px;
 }
 
@@ -73,15 +79,17 @@ nav{
 	background-color: #FA8D08;
 }
 
+/**********************************FRONT PAGE*************************************/
+
 .contents{
-	height: 1200px;
+	min-height: 2500px;
 }
 
 .frontPage{
 	height: 600px;
 	background: url('images/coffee.jpg');
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: 100% auto;
 	background-attachment: fixed;
 	text-align: center;
 }
@@ -95,12 +103,12 @@ nav{
 	background-repeat: no-repeat;
 	margin-left: auto;
 	margin-right: auto;
-	top: 60px;
+	top: 80px;
 }
 
 #frontText1{
 	position: relative;
-	top: 75px;
+	top: 95px;
 	color: white;
 	font-size: 30px;
 }
@@ -108,14 +116,103 @@ nav{
 #frontText2{
 	color: white;
 	position: relative;
-	top: 105px;
+	top: 125px;
 	font-size: 15px;
 }
 
+/*************************************App Intro*********************************************/
+
+.appIntro{
+	height: 630px;
+	background-color: #16C3D8;
+}
+
+.contents h1,.contents h2{
+	font-family: futura;
+	font-weight: px;
+	font-size: 30px;
+}
+
+.introTextArea{
+	width: 50%;
+	height: 100%;
+	float: left;
+	text-align: center;
+}
+
+#introTitle{
+	position: relative;
+	top: 160px;
+}
+
+.introText{
+	position: relative;
+	font-size: 25px;
+	color: white;
+	line-height: 1.5;
+}
+
+.introImgArea{
+	width: 50%;
+	height: 100%;
+	float: right;
+}
+
+.appIntro figure{
+	position: relative;
+	display: block;
+	width: 45%;
+	left: 120px;
+	border: 1px solid #000;
+}
+
+.appIntro img{
+	width:100%;
+}
+
+/*************************************Having Lunch*********************************************/
+
+.lunch{
+	height: 580px;
+	background: url('images/eatingLunch.jpg');
+	background-repeat: no-repeat;
+	//background-size: auto 100%;
+	background-size: 1300px 900px;
+	background-attachment: fixed;
+	background-position: center bottom;
+	background-color: #16C3D8;
+	//border: 1px solid #000;
+}
+
+#meetSomeone{
+	position: relative;
+	color: white;
+	top: 100px;
+}
 
 .verticalAlign{
 	top: 50%;
 	-webkit-transform: translateY(-50%);
   	-ms-transform: translateY(-50%);
   	transform: translateY(-50%);
+}
+
+@media only screen and (max-width: 1000px){
+	.frontPage{
+		background-size: 1000px 800px;
+	}
+	.lunch{
+		//background-size: auto 100%;
+		background-size: 1100px 800px;
+	}
+	.appIntro figure{
+		width: 200px;
+		left: 10%;
+	}
+}
+
+@media only screen and (min-width: 1400px){
+	.appIntro figure{
+		width: 300px;
+	}
 }
