@@ -83,7 +83,7 @@ nav{
 /**********************************FRONT PAGE*************************************/
 
 .contents{
-	min-height: 2500px;
+	//min-height: 2500px;
 }
 
 .frontPage{
@@ -202,18 +202,15 @@ nav{
 	background-size: 100% auto; 
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+	overflow: hidden;
 	//border: 0.1px solid #FFF;
 }
 
 .lastPageTextContainer{
 	position: relative;
 	width: 600px;
-	height: 500px;
+	height: 400px;
 	margin-left: 50px;
-	top: -50%;
-	-webkit-transform: translateY(-50%);
-  	-ms-transform: translateY(-50%);
-  	transform: translateY(-50%);
 }
 
 .quote{
@@ -225,11 +222,21 @@ nav{
 	font-size: 30px;
 }
 
+.lastPageContainer{
+	height: inherit;
+	width: inherit;
+	position: relative;
+	top: -50%;
+	-webkit-transform: translateY(-50%);
+  	-ms-transform: translateY(-50%);
+  	transform: translateY(-50%);
+}
+
 .lastPageText{
 	position: relative;
 	color: #6E7980;
 	font-size: 22px;
-	font-weight: 15px;
+	font-weight: 10px;
 	font-family: sans-serif;
 	line-height: 1.5
 }
@@ -239,6 +246,22 @@ nav{
 	width: inherit;
 	background-color: white;
 	opacity: 0.6;
+}
+
+.lastPageButton{
+	position: relative;
+	width: 250px;
+	float: left;
+	-webkit-transform: translateX(-50%);
+  	-ms-transform: translateX(-50%);
+  	transform: translateX(-50%);
+  	background-color: #F9A032;
+}
+
+#button2{
+	-webkit-transform: translateX(-150%);
+  	-ms-transform: translateX(-150%);
+  	transform: translateX(-150%);
 }
 
 .verticalAlign{
