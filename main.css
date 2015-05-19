@@ -178,21 +178,17 @@ nav{
 /*************************************Having Lunch*********************************************/
 
 .lunch{
-	/*height: 580px;
+	height: 580px;
 	background: url('images/eatingLunch-min.jpg');
 	background-repeat: no-repeat;
 	background-size: 100% auto;
+	-webkit-background-size: 100% auto;
+	-moz-background-size: 100% auto;
+	-o-background-size: 100% auto;
 	background-attachment: fixed;
 	background-position: center top;
 	//background-color: #16C3D8;
-	//border: 1px solid #000;*/
-
-	height: 600px;
-	background: url('images/coffee.jpg');
-	background-repeat: no-repeat;
-	background-size: 100% auto;
-	background-attachment: fixed;
-	text-align: center;
+	//border: 1px solid #000;
 }
 
 #meetSomeone{
@@ -277,7 +273,7 @@ nav{
   	-ms-transform: translateY(-50%);
   	transform: translateY(-50%);
 }
-/*
+
 @media only screen and (max-width: 1000px){
 	.frontPage{
 		background-size: 1000px 660px;
@@ -296,8 +292,10 @@ nav{
 		background-size: 1250px auto;
 	}
 	.lunch{
-		//background-size: auto 100%;
 		background-size: 1250px 850px;
+		-webkit-background-size: 1250px 850px;
+		-moz-background-size: 1250px 850px;
+		-o-background-size: 1250px 850px;
 	}
 }
 
@@ -306,4 +304,4 @@ nav{
 	.appIntro figure{
 		width: 300px;
 	}
-}*/
+}
