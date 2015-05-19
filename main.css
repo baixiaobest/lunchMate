@@ -178,7 +178,7 @@ nav{
 
 .lunch{
 	height: 580px;
-	background: url('images/eatingLunch.jpg');
+	background: url('images/eatingLunch-min.jpg');
 	background-repeat: no-repeat;
 	//background-size: auto 100%;
 	//background-size: 1300px 900px;
@@ -199,7 +199,7 @@ nav{
 
 #lastPage{
 	height: 600px;
-	background: url('images/lastPage2.jpg');
+	background: url('images/lastPage2-min.jpg');
 	background-size: 100% auto; 
 	background-repeat: no-repeat;
 	background-attachment: fixed;
