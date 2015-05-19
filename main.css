@@ -181,12 +181,10 @@ nav{
 	height: 580px;
 	background: url('images/eatingLunch-min.jpg');
 	background-repeat: no-repeat;
-	//background-size: auto 100%;
-	//background-size: 1300px 900px;
 	background-size: 100% auto;
 	background-attachment: fixed;
 	background-position: center top;
-	background-color: #16C3D8;
+	//background-color: #16C3D8;
 	//border: 1px solid #000;
 }
 
