@@ -11,7 +11,7 @@ a, a:link, a:visited, a:hover, a:active{
 }
 
 h1, h2{
-	color: white;
+	color: black;
 }
 
 /***********************************NAVIGATION*******************************************/
@@ -23,10 +23,14 @@ nav{
 	transition: all 1s ease;
 }
 
+nav .button{
+	font-size: 18px;
+}
+
 .fixedNav{
 	position: fixed;
 	top: 0;
-	border-radius: 30px;
+	//border-radius: 30px;
 	//height: 60px;
 	box-shadow: 1px 1px 3px #AAA;
 	z-index: 1;
@@ -49,7 +53,7 @@ nav{
 .appLink{
 	position: relative;
 	text-align: center;
-	border: 1px solid #FFF;
+	border: 1.5px solid #FFF;
 	border-radius: 10px;
 	transition: all 0.5s ease;
 }
@@ -80,6 +84,7 @@ nav{
 
 .appLink:hover{
 	background-color: #FA8D08;
+	border-color: #FA8D08;
 }
 
 /**********************************FRONT PAGE*************************************/
@@ -127,13 +132,13 @@ nav{
 
 .appIntro{
 	height: 630px;
-	background-color: #16C3D8;
+	//background-color: #16C3D8;
+	background-color: #F0F0F0;
 	//border: 1px solid red;
 }
 
 .contents h1,.contents h2{
 	font-family: futura;
-	font-weight: px;
 	font-size: 30px;
 }
 
@@ -150,12 +155,11 @@ nav{
 }
 
 .introText{
+	font-family: Verdana;
 	position: relative;
-	font-size: 25px;
-	color: white;
+	font-size: 20px;
+	color: black;
 	line-height: 1.5;
-	padding-left: 30px;
-	padding-right: 30px;
 }
 
 .introImgArea{
@@ -194,14 +198,15 @@ nav{
 #meetSomeone{
 	position: relative;
 	color: white;
-	top: 100px;
+	top: 240px;
 }
 
 /*************************************Last Page******************************************************/
 
 #lastPage{
 	height: 600px;
-	background: url('images/lastPage2-min.jpg');
+	background: url('images/lastPageCrazy-min.jpg');
+	background-position: center 150px;
 	background-size: 100% auto; 
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -213,15 +218,16 @@ nav{
 	position: relative;
 	width: 600px;
 	height: 400px;
-	margin-left: 50px;
+	//margin-left: 100px;
+	left: 15%;
 }
 
 .quote{
 	font-family: Georgia;
 	position: relative;
-	color: #6E7980;
+	//color: #6E7980;
+	color: black;
 	font-style: italic;
-	font-weight: 20px;
 	font-size: 30px;
 }
 
@@ -237,7 +243,8 @@ nav{
 
 .lastPageText{
 	position: relative;
-	color: #6E7980;
+	//color: #6E7980;
+	color: black;
 	font-size: 22px;
 	font-weight: 10px;
 	font-family: sans-serif;
@@ -255,6 +262,8 @@ nav{
 	position: relative;
 	width: 200px;
 	float: left;
+	font-size: 18px;
+	top: 50px;
 	-webkit-transform: translateX(-50%);
   	-ms-transform: translateX(-50%);
   	transform: translateX(-50%);
